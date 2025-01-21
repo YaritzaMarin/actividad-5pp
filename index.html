@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #007bff;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      h2 {
+        margin-top: 2rem;
+      }
+      .col {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        text-align: center;
+        min-height: 100px;
+      }
+      .col-8 .nested-col {
+        border: 1px dashed #333;
+        background-color: #f1f1f1;
+        padding: 1rem;
+        margin: 0.5rem 0;
+      }
+      .row {
+        margin-bottom: 1rem;
+      }
+      .footer {
+        text-align: center;
+        background-color: rgb(13, 161, 164);
+        padding: 1rem 0;
+      }
+    </style>
+</head>
+<body style="background-color: lightblue; font-family: Arial, Helvetica, sans-serif;">
+    <div class="header" style="background-color: rgb(13, 161, 164); text-align: center;">
+        <h1>BOOTSTRAP</h1>
+    </div>  
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Yaritza</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.canva.com/design/DAGbiMYPW_k/Yr0K5pNkmMmfQWtQoj-Qcw/edit?utm_content=DAGbiMYPW_k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Actividad 1</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Actividad 2</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://yaritzamarin.github.io/actividad-2a/">Actividad 2A</a></li>
+                            <li><a class="dropdown-item" href="https://yaritzamarin.github.io/actividad-2b/">Actividad 2B</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://yaritzamarin.github.io/act3P/">Actividad 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Actividad 5</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Actividad 6</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Examen</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Proyecto final</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Columnas iguales</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 border border-dark" style="background-color: cadetblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem et libero ducimus fuga nesciunt illo qui perspiciatis in neque quis! Quaerat beatae deserunt aperiam magnam quisquam accusamus repellat, suscipit sint.</div>
+            <div class="col-sm-12 col-md-4 border border-dark" style="background-color: #76b8ff;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, omnis. Doloribus temporibus consequatur fugit nemo, laborum illum sed error reprehenderit ipsum, eum adipisci nihil voluptatum perferendis accusamus at facere? Culpa?</div>
+            <div class="col-sm-12 col-md-4 border border-dark" style="background-color: rgb(119, 225, 228);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid impedit veritatis fuga laudantium deserunt cum? Amet, repellendus similique, odit possimus unde id ipsam magni a dicta illum excepturi itaque. Modi.</div>
+        </div>
+
+        <h2>Columnas diferentes (8 y 4 md)</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-8 border border-dark" style="background-color: #7db7f5;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis modi nobis consequatur iure distinctio, ad tempora, eius nostrum autem cupiditate unde hic fugiat dignissimos libero facere repudiandae eos totam excepturi.</div>
+            <div class="col-sm-12 col-md-4 border border-dark" style="background-color: cadetblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ex similique neque temporibus, omnis tenetur assumenda quibusdam dolorem voluptates culpa unde, quaerat deleniti quis ullam iusto voluptatibus a nobis. Unde.</div>
+        </div>
+
+        <h2>Columnas diferentes (8 y 4 md) con columnas anidadas</h2>
+        <div class="row">
+            <div class="col-md-8 border border-dark" style="background-color: #4a91dd;">
+                <p>Columna de 8 md Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aspernatur omnis fugiat, fugit saepe dolore, commodi adipisci voluptate nulla facere, molestiae vero doloribus sapiente iste at ea repellendus atque quia?</p>
+                <div class="row">
+                    <div class="col-6 border border-dark" style="background-color: cadetblue;">Columna anidada 1 (6/12) Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sed nemo nisi quis eligendi quam repudiandae qui magni libero obcaecati placeat, fuga optio pariatur reprehenderit deserunt est culpa maxime corrupti.</div>
+                    <div class="col-6 border border-dark" style="background-color: #436d9b;">Columna anidada 2 (6/12) Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, maiores repellendus ab dolores libero facere veritatis, harum ducimus debitis similique, sequi recusandae voluptatem! Recusandae quae est perspiciatis cumque eum cupiditate.</div>
+                </div>
+            </div>
+            <div class="col-md-4 border border-dark" style="background-color: skyblue;">Columna de 4 md Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam odit ullam corrupti id quis, eligendi eius repellendus iusto dolores quod. Pariatur provident omnis quos maiores quod repellendus illo praesentium nesciunt.</div>
+        </div>
+
+        <h2>Mezcla de columnas (sm, md, lg)</h2>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 border border-dark" style="background-color: rgb(153, 218, 220);">Columna 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, et quia dolore unde obcaecati odit debitis provident fuga dignissimos eius aperiam suscipit culpa animi eaque voluptatibus veniam. Recusandae, facere temporibus.</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 border border-dark" style="background-color: #61abfa;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis saepe accusamus deleniti, incidunt in alias qui, explicabo nulla fugit voluptatem nobis sunt repudiandae illo omnis blanditiis rem, voluptatibus consequuntur libero?</div>
+            <div class="col-sm-12 col-md-4 col-lg-6 border border-dark" style="background-color: cadetblue;">Columna 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti provident neque quaerat, dolorum eos doloremque magnam quibusdam quod in eum consectetur expedita magni tempora esse excepturi dignissimos deserunt, perspiciatis et.</div>
+        </div>
+
+        <h2>Mezcla de columnas (sm, lg)</h2>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 border border-dark" style="background-color: rgb(24, 219, 226);">Columna 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsum animi molestias, dolore voluptatibus vitae? Corporis ad molestias reiciendis laudantium. Inventore, possimus incidunt? Molestias eos quia, ducimus atque cupiditate eligendi?</div>
+            <div class="col-sm-6 col-lg-8 border border-dark" style="background-color: #5381b3;">Columna 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore sunt, quibusdam, tempore aperiam adipisci consectetur iure, quas veritatis blanditiis ab eaque laudantium voluptate nisi voluptas deleniti molestias voluptates corrupti voluptatibus!</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Realizado por: Yaritza Jetzabel Marin Cruz</p>
+        <p>Última actualización: 20 de enero de 2025</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
